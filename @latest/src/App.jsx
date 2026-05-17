@@ -6,6 +6,7 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const[theme,setTheme]=useState('light')
   const handleIncrement=()=>{
     setCount(count+1)
   }
@@ -17,11 +18,17 @@ function App() {
   const resetCount=()=>{
     setCount(0)
   }
+  const ToggleTheme=()=>{
+    setTheme(theme==='light'?'dark':'light')
+  }
 
 
   return (
     <>
     <h1>COUNTER-APP</h1>
+    <button onClick={ToggleTheme}>TOGGLE THEME
+      {theme==='light'?"🌙 Dark Mode":"☀️ Light Mode"}
+    </button>
       <button onClick={handleIncrement}>INCREMENT</button>
       <button onClick={handleDecrement}>DECREMENT</button>
       <button onClick={resetCount}>RESET</button>
