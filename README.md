@@ -1,6 +1,6 @@
 # React Counter App
 
-A simple counter application built using React to practice core frontend concepts like state management and event handling.
+A modern counter application built with React to practice core frontend concepts like state management, event handling, conditional rendering, and dynamic theming.
 
 ---
 
@@ -8,9 +8,11 @@ A simple counter application built using React to practice core frontend concept
 
 - Increment counter
 - Decrement counter
+- Reset counter
+- Prevent negative values
+- Dark / Light mode toggle
 - Dynamic UI updates
-- Responsive button interactions
-- Clean and minimal interface
+- Responsive and clean design
 
 ---
 
@@ -21,7 +23,9 @@ A simple counter application built using React to practice core frontend concept
 - useState Hook
 - Event Handling
 - Conditional Rendering
-- State Updates
+- Dynamic Class Names
+- State-driven UI
+- Component Styling
 
 ---
 
@@ -39,9 +43,7 @@ A simple counter application built using React to practice core frontend concept
 ```bash
 src/
 │
-├── components/
-│   └── Counter.jsx
-│
 ├── App.jsx
 ├── App.css
-└── main.jsx
+├── main.jsx
+└── assets/
