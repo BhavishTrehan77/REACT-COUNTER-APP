@@ -14,6 +14,9 @@ function App() {
       setCount(count-1)
     }
   }
+  const resetCount=()=>{
+    setCount(0)
+  }
 
 
   return (
@@ -21,6 +24,7 @@ function App() {
     <h1>COUNTER-APP</h1>
       <button onClick={handleIncrement}>INCREMENT</button>
       <button onClick={handleDecrement}>DECREMENT</button>
+      <button onClick={resetCount}>RESET</button>
       <div>
         <h2>THE VALUE OF COUNT IS {count}</h2>
       </div>
